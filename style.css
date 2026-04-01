@@ -1,0 +1,462 @@
+
+/* General Page Style */
+
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#f0f2f5;
+animation:fadeIn 1.2s ease-in;
+}
+
+/* Header */
+
+header{
+background:#003366;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+header h1{
+margin:0;
+font-size:40px;
+}
+
+/* Banner */
+
+.banner{
+text-align:center;
+padding:20px;
+}
+
+.banner img{
+width:350px;
+height:auto;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Banner Text */
+
+.banner-text{
+text-align:center;
+padding:30px;
+background:#003366;
+color:white;
+}
+
+.banner-text h2{
+font-size:35px;
+margin-bottom:10px;
+}
+
+.banner-text p{
+font-size:18px;
+}
+
+/* Buttons */
+
+button{
+margin-top:20px;
+padding:12px 30px;
+font-size:18px;
+background:#ff9800;
+color:white;
+border:none;
+border-radius:6px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+transform:scale(1.1);
+background:#e68900;
+}
+
+/* Cards Layout */
+
+.cards{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+padding:40px;
+max-width:1100px;
+margin:auto;
+position:relative;
+z-index:1;
+}
+
+/* Card */
+
+.card{
+background:rgba(255,255,255,0.9);
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+text-align:center;
+padding-bottom:20px;
+transition:0.4s;
+}
+
+.card:hover{
+transform:translateY(-10px) scale(1.03);
+box-shadow:0 10px 25px rgba(0,0,0,0.35);
+}
+
+.card img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-top-left-radius:10px;
+border-top-right-radius:10px;
+}
+
+.card h3{
+margin:15px 0 10px 0;
+color:#003366;
+}
+
+.card p{
+padding:0 15px;
+color:#555;
+}
+
+/* Intro Section */
+
+.intro{
+padding:60px 20px;
+background:linear-gradient(135deg,#e3f2fd,#ffffff);
+}
+
+.intro-container{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:100px;
+max-width:1100px;
+margin:auto;
+flex-wrap:wrap;
+background:white;
+padding:40px;
+border-radius:15px;
+border-left:8px solid #003366;
+border-right:8px solid #003366;
+box-shadow:0 10px 25px rgba(0,0,0,0.25);
+transition:0.3s;
+}
+
+.intro-container:hover{
+transform:scale(1.02);
+}
+
+.intro-logo img{
+width:280px;
+border-radius:50%;
+border:5px solid #003366;
+box-shadow:0 6px 15px rgba(0,0,0,0.3);
+}
+
+.intro-text{
+max-width:500px;
+}
+
+.intro-text h2{
+font-size:36px;
+color:#003366;
+margin-bottom:15px;
+}
+
+.intro-text p{
+font-size:18px;
+color:#555;
+line-height:1.6;
+}
+
+.explore-btn{
+margin-top:20px;
+padding:12px 30px;
+font-size:18px;
+background:#ff9800;
+color:white;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
+
+.explore-btn:hover{
+background:#e68900;
+}
+
+/* Details Page */
+
+.details-page{
+background:linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)),
+url("pvs-details.jpg") no-repeat center center fixed;
+background-size:cover;
+}
+
+/* Attractive Background for Details Page Sections */
+.details-page .info-section {
+    background: linear-gradient(135deg, #e3f2fd, #ffffff);
+    padding: 60px 20px;
+    border-radius: 20px;
+    margin: 40px auto;
+    max-width: 1200px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.details-page .info-section:hover {
+    transform: scale(1.02);
+}
+
+/* Section Titles */
+.details-page .info-section h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+/* Paragraph Styling */
+.details-page .info-section p {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    max-width: 850px;
+    margin: auto;
+}
+
+/* Cards inside info section */
+.details-page .cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* Individual Card Styling */
+.details-page .card {
+    background: linear-gradient(145deg, #ffffff, #f0f8ff);
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    text-align: center;
+    padding-bottom: 20px;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.details-page .card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.35);
+}
+
+.details-page .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.details-page .card h3 {
+    margin: 15px 0 10px 0;
+    color: #003366;
+}
+
+.details-page .card p {
+    padding: 0 15px;
+    color: #555;
+    font-size: 16px;
+}
+
+.details-page .content-container{
+background:rgba(255,255,255,0.9);
+margin:20px auto;
+padding:40px;
+border-radius:15px;
+max-width:1200px;
+box-shadow:0 8px 25px rgba(0,0,0,0.3);
+}
+
+.details-page .cards{
+display:flex;
+justify-content:center;
+gap:40px;
+margin-top:30px;
+flex-wrap:wrap;
+}
+
+.details-page .card{
+width:340px;
+border-radius:15px;
+box-shadow:0 8px 20px rgba(0,0,0,0.3);
+}
+
+.details-page .card img{
+border-top-left-radius:15px;
+border-top-right-radius:15px;
+}
+
+/* Details Banner */
+
+.details-banner{
+background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("pvs.jpg");
+background-size:cover;
+background-position:center;
+height:400px;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+}
+
+/* Quality Page */
+
+.quality-row{
+display:flex;
+gap:20px;
+justify-content:center;
+flex-wrap:wrap;
+padding:30px;
+}
+
+.quality-card{
+width:220px;
+background:white;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+text-align:center;
+padding:10px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.quality-card img{
+width:100%;
+height:140px;
+object-fit:cover;
+border-radius:10px;
+}
+
+.quality-card:hover{
+transform:scale(1.05);
+border:3px solid #ff9800;
+}
+
+.quality-card h4{
+color:#003366;
+margin-top:10px;
+font-size:18px;
+}
+
+/* Page Animation */
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/* VIDEO BACKGROUND FOR CARDS SECTION */
+
+.video-cards{
+position:relative;
+overflow:hidden;
+padding:40px 0;
+}
+
+.cards-video{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+object-fit:cover;
+z-index:-1;
+filter:brightness(0.5);
+}
+
+/* Dance page video */
+
+.dance-video{
+text-align:center;
+padding:40px;
+}
+
+.dance-video video{
+width:auto;
+max-width:80%;
+max-height:450px;
+height:auto;
+border-radius:10px;
+box-shadow:0 6px 15px rgba(0,0,0,0.3);
+}
+
+.dance-text{
+max-width:700px;
+margin:auto;
+padding-top:20px;
+font-size:18px;
+}
+
+.cards a{
+text-decoration:none;
+color:#003366;
+}
+
+/* Values Page */
+
+.values-container{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+max-width:1100px;
+margin:auto;
+padding:40px;
+}
+
+.value-card{
+background:white;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+text-align:center;
+padding:10px;
+}
+
+.value-card img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:10px;
+}
+
+.value-card p{
+padding:10px;
+font-size:16px;
+color:#444;
+}
+
+.intro-logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.intro-logo .logo-text h2 {
+    margin: 10px 0 5px 0;
+    font-size: 28px;
+    color: #003366;
+    letter-spacing: 1px;
+}
+
+.intro-logo .logo-text p {
+    margin: 3px 0;
+    font-size: 18px;
+    color: #555;
+}
